@@ -1383,6 +1383,12 @@ img {
 		if(status == "failed"){
 			swal("Sorry","Inavid username/password","error");
 		}
+		if(status == "invalidUser"){
+			swal("Enter UserName","error");
+		}
+		if(status == "invalidPassword"){
+			swal("Enter Password", "error");
+		}
 	</script>
 </body>
 </html>

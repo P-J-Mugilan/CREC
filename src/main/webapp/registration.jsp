@@ -30,36 +30,38 @@
 							<div class="form-group">
 								<label for="uid"><i
 									class="zmdi zmdi-account material-icons-name"></i></label> <input
-									type="text" name="uid" id="uid" placeholder="Enter ID ..." />
+									type="text" name="uid" id="uid" placeholder="Enter ID ..." required/>
 							</div>
 							<div class="form-group">
 								<label for="name"><i
 									class="zmdi zmdi-account material-icons-name"></i></label> <input
-									type="text" name="name" id="name" placeholder="Enter Your Name ..." />
+									type="text" name="name" id="name" placeholder="Enter Your Name ..." required/>
 							</div>
 							<div class="form-group">
 								<label for="email"><i class="zmdi zmdi-email"></i></label> <input
-									type="email" name="email" id="email" placeholder="Enter Your Email ..." />
+									type="email" name="email" id="email" placeholder="Enter Your Email ..." required/>
 							</div>
 							<div class="form-group">
 								<label for="pass"><i class="zmdi zmdi-lock"></i></label> <input
-									type="password" name="pass" id="pass" placeholder="Enter Password ..." 
-									pattern="?=.*\d(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must containt atleast one number  and one uppercase and lowercase letter, and atleast 9 or more characters"/ required>
+									type="password" name="pass" id="pass" placeholder="Enter Password ..."
+									 pattern="?=.*\d(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+									 title="Must containt atleast one number  and one uppercase and lowercase letter, and atleast 9 or more characters"
+									 required>
 							</div>
 							<div class="form-group">
 								<label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
 								<input type="password" name="re_pass" id="re_pass"
-									placeholder="Re Enter Password ..." />
+									placeholder="Re Enter Password ..." required/>
 							</div>
 							<div class="form-group">
 								<label for="contact"><i class="zmdi zmdi-lock-outline"></i></label>
 								<input type="text" name="contact" id="contact"
-									placeholder="Contact no" />
+									placeholder="Contact no" required/>
 							</div>
 							<div class="form-group">
 								<input type="checkbox" name="agree-term" id="agree-term"
 									class="agree-term" /> <label for="agree-term"
-									class="label-agree-term"><span><span></span></span>I
+									class="label-agree-term" checked><span><span></span></span>I
 									agree all statements in <a href="#" class="term-service">Terms
 										of service</a></label>
 							</div>

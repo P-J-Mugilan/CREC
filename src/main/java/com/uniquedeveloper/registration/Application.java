@@ -26,8 +26,11 @@ public class Application extends HttpServlet {
 			throws ServletException, IOException {
 		
 		String name = request.getParameter("name");
-		String email = request.getParameter("email");
+		String id = request.getParameter("id");
 		String mobile = request.getParameter("mobile");
+		String dateOf = request.getParameter("dateOf");
+		String outTime = request.getParameter("outTime");
+		String inTime = request.getParameter("inTime");
 		String reason = request.getParameter("reason");
 		
 		RequestDispatcher dispatcher = null;
@@ -36,11 +39,14 @@ public class Application extends HttpServlet {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/signup?useSSL=false","root","Passwd@123");
-			PreparedStatement pst = con.prepareStatement("insert into applicationusers(name,email,mobile,reason) values(?,?,?,?) ");
+			PreparedStatement pst = con.prepareStatement("insert into applicationusers(name,id,mobile,dateOf,outTime,inTime,reason) values(?,?,?,?,?,?,?) ");
 			pst.setString(1, name);
-			pst.setString(2, email);
+			pst.setString(2, id);
 			pst.setString(3, mobile);
-			pst.setString(4, reason);
+			pst.setString(4, dateOf);
+			pst.setString(5, outTime);
+			pst.setString(6, inTime);
+			pst.setString(7, reason);
 			
 			
 			

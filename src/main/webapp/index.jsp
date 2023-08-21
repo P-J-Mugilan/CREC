@@ -127,9 +127,9 @@
 						</div>
 						<!-- Email address input-->
 						<div class="form-floating mb-3">
-							<input class="form-control" id="email" type="text"
-								placeholder="name@example.com" name="email"
-								data-sb-validations="required,email" required/> <label for="email">Student ID</label>
+							<input class="form-control" id="id" type="text"
+								placeholder="name@example.com" name="id"
+								data-sb-validations="required,email" required/> <label for="id">Student ID</label>
 							<div class="invalid-feedback" data-sb-feedback="email:required">An
 								email is required.</div>
 							<div class="invalid-feedback" data-sb-feedback="email:email">Email
@@ -144,21 +144,21 @@
 						</div>
 						<!-- date input-->
 						<div class="form-floating mb-3">
-							<input class="form-control" id="phone" type="date" name="mobile"
+							<input class="form-control" id="phone" type="date" name="dateOf"
 								required data-sb-validations="required" />
 							<label for="phone"></label>
 							<div class="invalid-feedback" data-sb-feedback="phone:required">Please! Enter the message.</div>
 						</div>
 						<!-- from time input-->
 						<div class="form-floating mb-3">
-							<input class="form-control" id="phone" type="time" name="mobile"
+							<input class="form-control" id="phone" type="time" name="outTime"
 								placeholder="Enter the Mobile No ..." required data-sb-validations="required" />
 							<label for="phone">OUT TIMING</label>
 							<div class="invalid-feedback" data-sb-feedback="phone:required">Please! Enter the message.</div>
 						</div>
 						<!--  to time input-->
 						<div class="form-floating mb-3">
-							<input class="form-control" id="phone" type="time" name="mobile"
+							<input class="form-control" id="phone" type="time" name="inTime"
 								placeholder="Enter the Mobile No ..." required data-sb-validations="required" />
 							<label for="phone">IN TIMING</label>
 							<div class="invalid-feedback" data-sb-feedback="phone:required">Please! Enter the message.</div>
