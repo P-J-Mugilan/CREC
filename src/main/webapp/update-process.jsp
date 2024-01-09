@@ -6,6 +6,8 @@ pageEncoding="ISO-8859-1"%>
 <%!String user = "root";%>
 <%!String psw = "Passwd@123";%>
 <%
+
+RequestDispatcher dispatcher = null;
 String nid = request.getParameter("nid");
 String name=request.getParameter("name");
 String id=request.getParameter("id");
@@ -38,12 +40,14 @@ ps.setString(9, permission);
 int i = ps.executeUpdate();
 if(i > 0)
 {
+	
 out.print("Record Updated Successfully");
+dispatcher = request.getRequestDispatcher("Teacher.jsp");
 
 }
 else
 {
-out.print("There is a problem in updating Record.");
+out.print("Updated.");
 } 
 }
 catch(SQLException sql)
@@ -54,3 +58,11 @@ out.println(sql);
 }
 }
 %>
+<html>
+<head>
+<title></title>
+<body>
+<a href="Teacher.jsp">List</a>
+</body>
+</head>
+</html>

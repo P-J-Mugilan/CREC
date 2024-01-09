@@ -29,7 +29,7 @@ while(resultSet.next()){
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Update data from database in jsp</h1>
+<h1>Update Student Data</h1>
 <form method="post" action="update-process.jsp">
 <input type="hidden" name="nid" value="<%=resultSet.getString("nid") %>">
 <input type="text" name="nid" value="<%=resultSet.getString("nid") %>">
@@ -57,7 +57,7 @@ Reason:<br>
 <input type="text" name="reason" value="<%=resultSet.getString("reason") %>">
 <br>
 Permission:<br>
-<input type="text" name="permission" value="<%=resultSet.getString("permission") %>">
+<input type="text" name="permission" id="permission" value="<%=resultSet.getString("permission") %>">
 <br>
 <input type="submit" value="submit">
 </form>

@@ -25,10 +25,47 @@ ResultSet resultSet = null;
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <body>
 <header>
-	
+	<nav id="nav-list">
+		<ul>
+			<li><a href="#" id="professor">Professor</a></li>
+			<li><a href="login.jsp">Home</a></li>
+			<li><a href="Teacher.jsp">Student List</a></li>
+			<li><a href="Security.jsp">Security</a></li>
+		</ul>
+	</nav>
 </header>
 
-<h1>Retrieve data from database in jsp</h1>
+<style>
+	nav ul li a{
+	text-decoration : none;
+	padding-left: 10px;
+	font-size: 30px;
+	}
+	#professor{
+		margin: 0;
+	}
+	nav ul li{
+		display : inline-block;
+		margin-left:20px;
+		
+	}
+	nav{
+		background: #98f789;
+		height: 60px;
+		padding-top:2px;
+	}
+	nav ul li a:hover{
+		color: blue;
+	}
+	table{
+		text-align:center;
+		font-size:18px;
+	}
+	
+</style>
+<center>
+
+<h1>Student Request List</h1>
 <table border="1">
 <tr>
 <td>Number</td>
@@ -73,6 +110,12 @@ connection.close();
 e.printStackTrace();
 }
 %>
+</center>
+
+<!-- Update code  -->
+
+
+
 
 </body>
 </html>
